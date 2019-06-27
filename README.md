@@ -1,4 +1,4 @@
-# Advanced Smart Contract Security Verification and Exploitation
+# Smashing Smart Contracts: Advanced Vulnerability Detection and Exploitation
 
   * [Preparation](#preparation)
     + [Setting up MythX for Remix](#setting-up-mythx-for-remix)
