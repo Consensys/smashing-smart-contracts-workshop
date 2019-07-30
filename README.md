@@ -73,12 +73,12 @@ Can you tell why "calldata" in Mythril's output has that particular value?
 
 An important aspect is the number of transactions that Mythril (symbolically) executes. The default number is 1, but you can increase it for a more in-depth analysis (note that this increases analysis time significantly). By setting max transactions to 2, you will also detect bugs that are two transactions "deep".
 
-#### Exercise 4: TODO
+### Exercise 4: TODO
 
 TODO
 
 
-#### Exercise 5: TODO
+### Exercise 5: TODO
 
 TODO
 
