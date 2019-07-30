@@ -47,53 +47,40 @@ TODO
 
 ## Workshop Content and Exercises
 
-### The Mythril CLI
+### Exercise 1: Accidentally Killin'
 
-
-
-#### Exercise 1
-
-
-
-#### Exercise 2
-
-For this example, let's set the max transaction count to 2:
+TODO: SimpleWalletLibrary
 
 ```
-$ myth analyze exercise4/contracts/Ownable.sol -t 2
+$ myth analyze ...
 ```
 
-### Advanced Mythril Configuration Options
+Using Scrooge
 
-(https://github.com/ConsenSys/devcon4-playground/tree/master/exercise4), we'll identify another type of vulnerability that has often been exploited in the past. We'll then show how to detect vulnerable contracts on the mainnet and auto-generate an exploit that extracts the kills the vulnerable contract.
+### Exercise 2: TokenSale
 
-An important aspect is the number of transactions that Mythril (symbolically) executes. The default number is 1, but you can increase it for a more in-depth analysis (note that this increases analysis time significantly). By setting max transactions to 2, you will also detect bugs that are two transactions "deep".
+In the [second exercise](https://github.com/ConsenSys/devcon4-playground/tree/master/exercise2), we'll look at a the `Tokensale` contract from [CaptureTheEther](https://capturetheether.com/challenges/math/token-sale/).
 
-#### Exercise 3
-
-TODO
-
-#### Exercise 4
-
-Mythril has a few extra tricks up its sleeve. In the [second exercise](https://github.com/ConsenSys/devcon4-playground/tree/master/exercise2), we'll look at a the `Tokensale` contract from [CaptureTheEther](https://capturetheether.com/challenges/math/token-sale/). The source code of that contract is in the `exercise2` directory. The question is, does it have any vulnerabilities? Let's do a quick Mythril run to find out:
-
-```
-$ myth analyze exercise2/contracts/Tokensale.sol (Pypi)
-```
+TODO: Show calculations, show how to write wrapper
 
 Can you tell why "calldata" in Mythril's output has that particular value?
 
-With the right calldata, you should now able to solve the [Tokensale challenge](https://capturetheether.com/challenges/math/token-sale/).
+### Exercise 3: TODO
 
-### Using Scrooge
 
+
+#### Advanced Mythril Configuration Options
+
+An important aspect is the number of transactions that Mythril (symbolically) executes. The default number is 1, but you can increase it for a more in-depth analysis (note that this increases analysis time significantly). By setting max transactions to 2, you will also detect bugs that are two transactions "deep".
+
+#### Exercise 4: TODO
+
+TODO
 
 
 #### Exercise 5: TODO
 
 TODO
-
-#### Exercise 6: TODO
 
 ## Hacking Contest
 
