@@ -45,22 +45,17 @@ Mythril version v0.21.12
 
 TODO
 
-## Mythril Guide and Exercises
+## Workshop Content and Exercises
 
-TODO
+### The Mythril CLI
 
-### Analyzing Contracts on the Blockchain
 
-Now things will get serious! We'll take the attacker's side and exploit this exact contract. Depending on your level of skill, pick one of the following:
 
-- Easy: [Token](https://ethernaut.zeppelin.solutions/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
-- A bit more difficult: [TokenWhale](https://capturetheether.com/challenges/math/token-whale/).
+#### Exercise 1
 
-## Advanced Configuration
 
-Mythril can analyze smart contracts from many sources, including bytecode on the blockchain. In [exercise 4](https://github.com/ConsenSys/devcon4-playground/tree/master/exercise4), we'll identify another type of vulnerability that has often been exploited in the past. We'll then show how to detect vulnerable contracts on the mainnet and auto-generate an exploit that extracts the kills the vulnerable contract.
 
-An important aspect is the number of transactions that Mythril (symbolically) executes. The default number is 1, but you can increase it for a more in-depth analysis (note that this increases analysis time significantly). By setting max transactions to 2, you will also detect bugs that are two transactions "deep".
+#### Exercise 2
 
 For this example, let's set the max transaction count to 2:
 
@@ -68,9 +63,19 @@ For this example, let's set the max transaction count to 2:
 $ myth analyze exercise4/contracts/Ownable.sol -t 2
 ```
 
-### 
+### Advanced Mythril Configuration Options
 
-Mythril has a few extra tricks up its sleeve. In the [second exercise](https://github.com/ConsenSys/devcon4-playground/tree/master/exercise2), we'll look at a the `Tokensale` contract from [CaptureTheEther](https://capturetheether.com/challenges/math/token-sale/). The source code of that contract is in the `exercise2` directory. The question is, does it have any vulnerabilities? Let's do a quick Mythril Classic run to find out:
+(https://github.com/ConsenSys/devcon4-playground/tree/master/exercise4), we'll identify another type of vulnerability that has often been exploited in the past. We'll then show how to detect vulnerable contracts on the mainnet and auto-generate an exploit that extracts the kills the vulnerable contract.
+
+An important aspect is the number of transactions that Mythril (symbolically) executes. The default number is 1, but you can increase it for a more in-depth analysis (note that this increases analysis time significantly). By setting max transactions to 2, you will also detect bugs that are two transactions "deep".
+
+#### Exercise 3
+
+TODO
+
+#### Exercise 4
+
+Mythril has a few extra tricks up its sleeve. In the [second exercise](https://github.com/ConsenSys/devcon4-playground/tree/master/exercise2), we'll look at a the `Tokensale` contract from [CaptureTheEther](https://capturetheether.com/challenges/math/token-sale/). The source code of that contract is in the `exercise2` directory. The question is, does it have any vulnerabilities? Let's do a quick Mythril run to find out:
 
 ```
 $ myth analyze exercise2/contracts/Tokensale.sol (Pypi)
@@ -80,10 +85,22 @@ Can you tell why "calldata" in Mythril's output has that particular value?
 
 With the right calldata, you should now able to solve the [Tokensale challenge](https://capturetheether.com/challenges/math/token-sale/).
 
-## Using Scrooge
+### Using Scrooge
 
 
 
+#### Exercise 5: TODO
+
+TODO
+
+#### Exercise 6: TODO
+
+## Hacking Contest
+
+Now things will get serious! We'll take the attacker's side and exploit this exact contract. Depending on your level of skill, pick one of the following:
+
+- Easy: [Token](https://ethernaut.zeppelin.solutions/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
+- A bit more difficult: [TokenWhale](https://capturetheether.com/challenges/math/token-whale/).
 
 ## What to Do Next
 
