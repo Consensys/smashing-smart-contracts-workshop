@@ -83,13 +83,13 @@ TODO: Show calculations, show how to write wrapper
 
 An important aspect is the number of transactions that Mythril (symbolically) executes. The default number is 1, but you can increase it for a more in-depth analysis (note that this increases analysis time significantly). By setting max transactions to 2, you will also detect bugs that are two transactions "deep".
 
-### Level 4: TODO
+### Level 4: Manual Reverse Engineering
 
-TODO
+TODO @Nathan
 
 ## Capture the Flag
 
-TODO
+TODO - Add a couple of more diffiult CTF challenges
 
 ## What to Do Next
 
