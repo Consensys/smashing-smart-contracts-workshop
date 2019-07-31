@@ -1,3 +1,7 @@
+<p align="center">
+	<img src="/static/smashing.png" height="300px"/>
+</p>
+
 # Smashing Smart Contracts: Advanced Vulnerability Detection and Exploitation
 
 ## Preparation
