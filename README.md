@@ -53,24 +53,30 @@ TODO
 
 ### Exercise 1: Accidentally Killin'
 
-TODO: SimpleWalletLibrary
+TODO:
+
+Analysis with source code:
+
+- [SimpleWalletLibrary](https://github.com/ConsenSys/mythx-playground/blob/master/exercise1/SimpleWalletLibrary.sol)
+
+On the blockchain:
+
+- [Ethernaut Fallout](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
 
 ```
 $ myth analyze ...
 ```
 
-Using Scrooge
+TODO: Using Scrooge to solve fallout
 
-### Exercise 2: TokenSale
+### Exercise 2: Integer Arithmetics
 
-In the [second exercise](https://github.com/ConsenSys/devcon4-playground/tree/master/exercise2), we'll look at a the `Tokensale` contract from [CaptureTheEther](https://capturetheether.com/challenges/math/token-sale/).
+- [Ethernaut Token](https://ethernaut.openzeppelin.com/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
+- [Tokensale on CaptureTheEther](https://capturetheether.com/challenges/math/token-sale/)
 
 TODO: Show calculations, show how to write wrapper
 
-Can you tell why "calldata" in Mythril's output has that particular value?
-
 ### Exercise 3: TODO
-
 
 
 #### Advanced Mythril Configuration Options
@@ -81,17 +87,9 @@ An important aspect is the number of transactions that Mythril (symbolically) ex
 
 TODO
 
-
-### Exercise 5: TODO
+## Capture the Flag
 
 TODO
-
-## Hacking Contest
-
-Now things will get serious! We'll take the attacker's side and exploit this exact contract. Depending on your level of skill, pick one of the following:
-
-- Easy: [Token](https://ethernaut.zeppelin.solutions/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
-- A bit more difficult: [TokenWhale](https://capturetheether.com/challenges/math/token-whale/).
 
 ## What to Do Next
 
