@@ -51,7 +51,7 @@ TODO
 
 ## Workshop Content and Exercises
 
-### Exercise 1: Accidentally Killin'
+### Level 1: Accidentally Killin'
 
 TODO:
 
@@ -69,21 +69,21 @@ $ myth analyze ...
 
 TODO: Using Scrooge to solve fallout
 
-### Exercise 2: Integer Arithmetics
+### Level 2: Integer Arithmetics
 
 - [Ethernaut Token](https://ethernaut.openzeppelin.com/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
 - [Tokensale on CaptureTheEther](https://capturetheether.com/challenges/math/token-sale/)
 
 TODO: Show calculations, show how to write wrapper
 
-### Exercise 3: TODO
+### Level 3: TODO
 
 
 #### Advanced Mythril Configuration Options
 
 An important aspect is the number of transactions that Mythril (symbolically) executes. The default number is 1, but you can increase it for a more in-depth analysis (note that this increases analysis time significantly). By setting max transactions to 2, you will also detect bugs that are two transactions "deep".
 
-### Exercise 4: TODO
+### Level 4: TODO
 
 TODO
 
