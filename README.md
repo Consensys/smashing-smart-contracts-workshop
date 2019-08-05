@@ -17,9 +17,15 @@ First, you need a web3 capable browser and some testnet ETH. You probably also h
 - https://faucet.metamask.io/
 - https://faucet.ropsten.be/
 
-### Running a Geth Light Node
+### Running a Geth Light Client
 
-TODO
+Most of the examples work with [Infura](https://www.infura.io), but if you want to use Scrooge McEtherface and do things in a block-chainy way you should run your own node. Syncing a full node can take a couple of days but you can set up a light client instead. Install [go-ethereum](https://github.com/ethereum/go-ethereum/wiki/Installing-Geth) and run:
+
+```
+geth --testnet --syncmode light --rpc
+```
+
+This should sync with the Ropsten network pretty quickly. You can now point Metamask and Scrooge to `Localhost 8545`.
 
 ### Installing Mythril
 
@@ -47,7 +53,11 @@ Mythril version v0.21.12
 
 ### Installing Scrooge McEtherface
 
-TODO
+Scrooge doesn't have a Pypi package. Clone the Github repo to use it.
+
+```
+$ git clone https://github.com/b-mueller/scrooge-mcetherface
+```
 
 ## Workshop Content and Exercises
 
@@ -76,12 +86,9 @@ TODO: Using Scrooge to solve fallout
 
 TODO: Show calculations, show how to write wrapper
 
-### Level 3: TODO
+### Level 3: Poor Random Numbers
 
-
-#### Advanced Mythril Configuration Options
-
-An important aspect is the number of transactions that Mythril (symbolically) executes. The default number is 1, but you can increase it for a more in-depth analysis (note that this increases analysis time significantly). By setting max transactions to 2, you will also detect bugs that are two transactions "deep".
+TODO
 
 ### Level 4: Manual Reverse Engineering
 
@@ -94,6 +101,10 @@ TODO - Add a couple of more diffiult CTF challenges
 ## What to Do Next
 
 A great way to continue learning is playing challenges like [Capture the Ether](https://capturetheether.com), [Security Innovation CTF](https://blockchain-ctf.securityinnovation.com) and [Ethernaut](https://ethernaut.zeppelin.solutions).
+
+## Cheat Sheet
+
+TODO
 
 ## Credit
 
