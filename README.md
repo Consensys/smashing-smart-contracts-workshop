@@ -63,19 +63,22 @@ $ git clone https://github.com/b-mueller/scrooge-mcetherface
 
 ### Level 1: Accidentally Killin'
 
-TODO:
+To run analysis with source code:
 
-Analysis with source code:
+```
+$ myth analyze <codefile.sol>
+```
 
 - [SimpleWalletLibrary](https://github.com/ConsenSys/mythx-playground/blob/master/exercise1/SimpleWalletLibrary.sol)
 
-On the blockchain:
+For analysis of on-chain contracts use the `--rpc` and `-a` options.
+
+```
+$ myth analyze --rpc localhost:8545 -a <address>
+$ myth analyze --rpc infura-ropsten -a <address>
+```
 
 - [Ethernaut Fallout](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
-
-```
-$ myth analyze ...
-```
 
 TODO: Using Scrooge to solve fallout
 
@@ -88,7 +91,8 @@ TODO: Show calculations, show how to write wrapper
 
 ### Level 3: Poor Random Numbers
 
-TODO
+- [Guess the Random Number on CaptureTheEther](https://capturetheether.com/challenges/lotteries/guess-the-random-number/)
+
 
 ### Level 4: Manual Reverse Engineering
 
@@ -101,10 +105,6 @@ TODO - Add a couple of more diffiult CTF challenges
 ## What to Do Next
 
 A great way to continue learning is playing challenges like [Capture the Ether](https://capturetheether.com), [Security Innovation CTF](https://blockchain-ctf.securityinnovation.com) and [Ethernaut](https://ethernaut.zeppelin.solutions).
-
-## Cheat Sheet
-
-TODO
 
 ## Credit
 
