@@ -69,7 +69,6 @@ To run analysis with source code:
 $ myth analyze <codefile.sol>
 ```
 
-- [SimpleWalletLibrary](https://github.com/ConsenSys/mythx-playground/blob/master/exercise1/SimpleWalletLibrary.sol)
 
 For analysis of on-chain contracts use the `--rpc` and `-a` options.
 
@@ -78,9 +77,12 @@ $ myth analyze --rpc localhost:8545 -a <address>
 $ myth analyze --rpc infura-ropsten -a <address>
 ```
 
-- [Ethernaut Fallout](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
-
 TODO: Using Scrooge to solve fallout
+
+#### Target Contracts 
+
+- [SimpleWalletLibrary](https://github.com/ConsenSys/mythx-playground/blob/master/exercise1/SimpleWalletLibrary.sol)
+- [Ethernaut Fallout](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
 
 ### Level 2: Integer Arithmetics
 
