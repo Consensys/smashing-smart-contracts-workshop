@@ -94,7 +94,7 @@ Theo version v0.8.1.
 #### Target Contracts 
 
 - [SimpleWalletLibrary](https://github.com/ConsenSys/mythx-playground/blob/master/exercise1/SimpleWalletLibrary.sol)
-- [Ethernaut Fallout](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
+- [Ethernaut Fallout](./code/Fallout.sol)
 - [Ethernaut Fallback](https://ethernaut.openzeppelin.com/level/0x234094aac85628444a82dae0396c680974260be7)
 
 ### Level 2: Integer Arithmetics
