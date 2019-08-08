@@ -77,30 +77,28 @@ $ myth analyze --rpc localhost:8545 -a <address>
 $ myth analyze --rpc infura-ropsten -a <address>
 ```
 
-TODO: Using Scrooge to solve fallout
+To run Scrooge McEtherface, set up Scrooge's `config.ini`, then run:
+
+```
+$ ./scrooge <address>
+```
 
 #### Target Contracts 
 
 - [SimpleWalletLibrary](https://github.com/ConsenSys/mythx-playground/blob/master/exercise1/SimpleWalletLibrary.sol)
 - [Ethernaut Fallout](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
+- [Ethernaut Fallback](https://ethernaut.openzeppelin.com/level/0x234094aac85628444a82dae0396c680974260be7)
 
 ### Level 2: Integer Arithmetics
 
 - [Ethernaut Token](https://ethernaut.openzeppelin.com/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
 - [Tokensale on CaptureTheEther](https://capturetheether.com/challenges/math/token-sale/)
 
-TODO: Show calculations, show how to write wrapper
-
 ### Level 3: Poor Random Numbers
 
 - [Guess the Random Number on CaptureTheEther](https://capturetheether.com/challenges/lotteries/guess-the-random-number/)
 
-
-### Level 4: Manual Reverse Engineering
-
-TODO @Nathan
-
-## Capture the Flag
+## Level 4: Reversing and CTFs
 
 TODO - Add a couple of more diffiult CTF challenges
 
