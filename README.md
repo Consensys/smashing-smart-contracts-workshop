@@ -12,6 +12,14 @@ Here's how to get set up for the workshop. It should be super easy except if you
 
 If you run into insurmountable problems ask the instructors for help. There's also a dedicated [Discord channel](https://discord.gg/kGDd8FP) that we created exclusively for you, the valued workshop participant.
 
+### Installing Ganache
+
+Ganache is the local Ethereum development server. 
+Install it with npm:
+```console
+$ npm i -g ganache-cli
+```
+
 ### Installing Scrooge McEtherface
 
 Scrooge doesn't have a Pypi package. Clone the Github repo to use it.
