@@ -61,6 +61,20 @@ Scrooge doesn't have a Pypi package. Clone the Github repo to use it.
 $ git clone https://github.com/b-mueller/scrooge-mcetherface
 ```
 
+### Installing Theo
+
+Theo has a PyPI package:
+```console
+$ pip install --user theo --upgrade
+```
+
+Or you can just clone the repo and install it:
+```console
+$ git clone https://github.com/cleanunicorn/theo
+$ cd theo
+$ pip install -e .
+```
+
 ## Workshop Content and Exercises
 
 ### Level 1: Accidentally Killin'
@@ -83,6 +97,31 @@ To run Scrooge McEtherface, set up Scrooge's `config.ini`, then run:
 
 ```
 $ ./scrooge <address>
+```
+
+To run Theo, start it with available arguments
+```console
+$ theo
+The account's private key (input hidden)
+> 
+Contract to interact with
+> 0x1df62f291b2e969fb0849d99d9ce41e2f137006e
+Scanning for exploits in contract: 0x1dF62f291b2E969fB0849d99D9Ce41e2F137006e
+Received an empty response from eth_getCode. Check the contract address and verify that you are on the correct chain.
+No exploits found. You're going to need to load some exploits.
+
+Tools available in the console:
+- `exploits` is an array of loaded exploits found by Mythril or read from a file
+- `w3` an initialized instance of web3py for the provided HTTP RPC endpoint
+- `dump()` writing a json representation of an object to a local file
+
+Check the readme for more info:
+https://github.com/cleanunicorn/theo
+
+Theo version v0.8.1.
+
+
+>>> 
 ```
 
 #### Target Contracts 
