@@ -151,6 +151,28 @@ $ docker run mythril/myth version
 Mythril version v0.21.12
 ```
 
+## Troubleshooting
+
+### openssl/aes.h: No such file or directory
+
+If you get this error, you need the libssl source libraries:
+
+```
+    scrypt-1.2.1/libcperciva/crypto/crypto_aes.c:6:10: fatal error: openssl/aes.h: No such file or directory
+     #include <openssl/aes.h>
+              ^~~~~~~~~~~~~~~
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    
+    ----------------------------------------
+Command "/usr/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-5rl4ep94/scrypt/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-mnbzx9qe-record/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-build-5rl4ep94/scrypt/
+```
+
+On Ubuntu you can install them with:
+```console
+$ sudo apt install libssl-dev
+```
+
 ## What to Do Next
 
 A great way to continue learning is playing challenges like [Capture the Ether](https://capturetheether.com), [Security Innovation CTF](https://blockchain-ctf.securityinnovation.com) and [Ethernaut](https://ethernaut.zeppelin.solutions).
