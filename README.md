@@ -4,13 +4,13 @@
 
 # Smashing Smart Contracts: Advanced Vulnerability Detection and Exploitation
 
-In this workshop we'll practice hacking & exploitation of Solidity/EVM smart contracts. During the workshop we'll look at  real-world contracts, play challenges from [CaptureTheEther](https://capturetheether.com) and [OpenZeppelin Ethernaut](https://ethernaut.openzeppelin.com) and tackle some reverse engineering challenges. You'll find the source code for most challenges in [here](https://github.com/ConsenSys/mythx-playground).
+In this workshop we'll practice hacking & exploitation of Solidity/EVM smart contracts. During the workshop we'll look at  real-world contracts, play challenges from [CaptureTheEther](https://capturetheether.com) and [OpenZeppelin Ethernaut](https://ethernaut.openzeppelin.com) and do a little frontrunning exercise. You'll find the source code for most challenges in [here](https://github.com/ConsenSys/mythx-playground).
 
 ## Preparation
 
 Here's how to get set up for the workshop. It should be super easy except if you're using Windows (you need Node.js and a Python 3 environment, preferably set up a separate [Virtualenv](https://virtualenv.pypa.io/en/latest/).
 
-If you run into insurmountable problems ask the instructors for help. There's also a dedicated [Discord channel](https://discord.gg/kGDd8FP) that we created exclusively for you, the valued workshop participant.
+If you run into insurmountable problems ask the instructors for help. There's also a dedicated [Discord channel](https://discord.gg/AQZu4jN) that we created exclusively for you, the valued workshop participant.
 
 ### Getting Testnet ETH
 
