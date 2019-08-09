@@ -8,7 +8,7 @@ In this workshop we'll practice hacking & exploitation of Solidity/EVM smart con
 
 ## Preparation
 
-Here's how to get set up for the workshop. It should be super easy except if you're using Windows (you need Node.js and a Python 3 environment, preferably set up a separate [Virtualenv](https://virtualenv.pypa.io/en/latest/).
+Here's how to get set up for the workshop. It should be super easy except if you're using Windows (you need Node.js and a Python 3 environment).
 
 If you run into insurmountable problems ask the instructors for help. There's also a dedicated [Discord channel](https://discord.gg/AQZu4jN) that we created exclusively for you, the valued workshop participant.
 
