@@ -87,16 +87,16 @@ $ ./scrooge <address>
 
 **Target Contracts:**
 
-- [Guess the Random Number on CaptureTheEther](./code/guesstherandomnumber.sol) - [Challenge](https://capturetheether.com/challenges/lotteries/guess-the-random-number/)
-- [Ethernaut Fallout](./code/Fallout.sol) - [Challenge](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
-- [Ethernaut Fallback](./code/Fallback.sol) - [Challenge](https://ethernaut.openzeppelin.com/level/0x234094aac85628444a82dae0396c680974260be7)
+- [Guess the Random Number](./code/guesstherandomnumber.sol) - [Challenge on CTE](https://capturetheether.com/challenges/lotteries/guess-the-random-number/)
+- [Ethernaut Fallout](./code/Fallout.sol) - [Challenge on Ethernaut](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
+- [Ethernaut Fallback](./code/Fallback.sol) - [Challenge on Ethernau](https://ethernaut.openzeppelin.com/level/0x234094aac85628444a82dae0396c680974260be7)
 
 ### Level 2: Integer Arithmetics
 
 In the second example we'll again steal tokens and Ether, but this time with an integer arithmetics flavor.
 
-- [Ethernaut Token](./code/Token.sol) - [Challenge](https://ethernaut.openzeppelin.com/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
-- [Tokensale on CaptureTheEther](./code/TokenSale.sol) - [Challenge](https://capturetheether.com/challenges/math/token-sale/)
+- [Ethernaut Token](./code/Token.sol) - [Challenge on Ethernau](https://ethernaut.openzeppelin.com/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
+- [Tokensale on CaptureTheEther](./code/TokenSale.sol) - [Challenge on CTE](https://capturetheether.com/challenges/math/token-sale/)
 
 ### Level 3: Honeypot
 
@@ -123,7 +123,30 @@ https://github.com/cleanunicorn/theo
 
 Theo version v0.8.1.
 
->>> 
+>>>
+
+```
+**Protip**
+
+To be safe from frontrunning and errors, wrap your exploit into a wrapper that reverts the transaction if the attack fails:
+
+```
+contract Wrapper {
+    
+	_target = 0xaAaAaAaaAaAaAaaAaAAAAAAAAaaaAaAaAaaAaaAa
+
+    constructor(bytes memory _data) public payable {
+        address proxy = address(this);
+        uint256 start_balance = msg.sender.balance + proxy.balance;
+        
+        address(_target).call.value(msg.value)(_data);
+        
+        assert(msg.sender.balance + proxy.balance > start_balance);
+        selfdestruct(msg.sender);
+    }
+     
+    function() external payable {}
+}
 ```
 
 ## Advanced Setup
