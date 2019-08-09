@@ -40,12 +40,23 @@ _Mythril uses solc to compile Solidity files, so you'll need to [install that as
 
 ### Installing Scrooge McEtherface (Exploit Automation)
 
-Scrooge doesn't have a Pypi package. Clone the Github repo to install the required packages into a Python 3 environment:
+To install Scrooge,.clone the Github repo to install the required packages into a Python 3 environment:
 
 ```
 $ git clone https://github.com/b-mueller/scrooge-mcetherface
 $ cd scrooge-mcetherface
 $ pip3 install -r requirements.txt
+```
+
+Setup `config.ini` for Ganache:
+
+```
+[settings]
+rpc = http://localhost:7545
+sender = 0xf4a60CbD6C43418c71389d8a0D98a9A356609761
+symbolic_tx_count = 3
+timeout = 300
+gasprice = 3000000000
 ```
 
 ### Installing Theo (Frontrunning)
