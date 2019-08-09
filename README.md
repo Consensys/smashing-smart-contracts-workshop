@@ -8,27 +8,39 @@ In this workshop we'll practice hacking & exploitation of Solidity/EVM smart con
 
 ## Preparation
 
-Here's how to get set up for the workshop. It should be super easy except if you're using Windows.
+Here's how to get set up for the workshop. It should be super easy except if you're using Windows (you need Node.js and a Python 3 environment, preferably set up a separate [Virtualenv](https://virtualenv.pypa.io/en/latest/).
 
 If you run into insurmountable problems ask the instructors for help. There's also a dedicated [Discord channel](https://discord.gg/kGDd8FP) that we created exclusively for you, the valued workshop participant.
 
 ### Installing Ganache
 
-Ganache is the local Ethereum development server. 
-Install it with npm:
+[Ganache](https://www.trufflesuite.com/ganache) is a local Ethereum development server. Install it with npm:
+
 ```console
 $ npm i -g ganache-cli
 ```
 
-### Installing Scrooge McEtherface
+### Installing Mythril (Vulnerability Detection)
 
-Scrooge doesn't have a Pypi package. Clone the Github repo to use it.
+Install [Mythril](https://github.com/ConsenSys/mythril) from Pypi:
+
+```bash
+$ pip3 install mythril
+```
+
+If you can't get this to work you can use the Docker image instead (see [docs](https://mythril-classic.readthedocs.io/en/master/installation.html), note however that the below tools won't work then.
+
+### Installing Scrooge McEtherface (Exploit Automation)
+
+Scrooge doesn't have a Pypi package. Clone the Github repo to install the required packages into a Python 3 environment:
 
 ```
 $ git clone https://github.com/b-mueller/scrooge-mcetherface
+$ cd scrooge-mcetherface
+$ pip3 install -r requirements.txt
 ```
 
-### Installing Theo
+### Installing Theo (Frontrunning)
 
 Theo has a PyPI package:
 ```console
@@ -46,12 +58,11 @@ $ pip install -e .
 
 ### Level 1: Accidentally Killin'
 
-To run analysis with source code:
+In the first example we'll focus on killing smart contracts as well as stealing Ether from them. Here are a few hints:
 
 ```
 $ myth analyze <codefile.sol>
 ```
-
 
 For analysis of on-chain contracts use the `--rpc` and `-a` options.
 
@@ -66,7 +77,30 @@ To run Scrooge McEtherface, set up Scrooge's `config.ini`, then run:
 $ ./scrooge <address>
 ```
 
-To run Theo, start it with available arguments
+**Target Contracts:**
+
+- [SimpleWalletLibrary](https://github.com/ConsenSys/mythx-playground/blob/master/level1/SimpleWalletLibrary.sol)
+- [Ethernaut Fallout](./code/Fallout.sol) - [Challenge](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
+- [Ethernaut Fallback](./code/Fallback.sol) - [Challenge](https://ethernaut.openzeppelin.com/level/0x234094aac85628444a82dae0396c680974260be7)
+
+### Level 2: Integer Arithmetics
+
+In the second example we'll again steal tokens and Ether, but this time with an integer arithmetics flavor.
+
+- [Ethernaut Token](https://ethernaut.openzeppelin.com/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
+- [Tokensale on CaptureTheEther](https://capturetheether.com/challenges/math/token-sale/)
+
+### Level 3: Poor Random Numbers
+
+Another simple challenge that has to do with reading storage:
+
+- [Guess the Random Number on CaptureTheEther](https://capturetheether.com/challenges/lotteries/guess-the-random-number/)
+
+## Level 4: Frontrunning
+
+This time, we'll set up a honeypot for others to tap into.
+
+To run Theo, start it with available arguments:
 ```console
 $ theo
 The account's private key (input hidden)
@@ -87,28 +121,8 @@ https://github.com/cleanunicorn/theo
 
 Theo version v0.8.1.
 
-
 >>> 
 ```
-
-#### Target Contracts 
-
-- [SimpleWalletLibrary](https://github.com/ConsenSys/mythx-playground/blob/master/level1/SimpleWalletLibrary.sol)
-- [Ethernaut Fallout](./code/Fallout.sol) - [Challenge](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
-- [Ethernaut Fallback](./code/Fallback.sol) - [Challenge](https://ethernaut.openzeppelin.com/level/0x234094aac85628444a82dae0396c680974260be7)
-
-### Level 2: Integer Arithmetics
-
-- [Ethernaut Token](https://ethernaut.openzeppelin.com/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
-- [Tokensale on CaptureTheEther](https://capturetheether.com/challenges/math/token-sale/)
-
-### Level 3: Poor Random Numbers
-
-- [Guess the Random Number on CaptureTheEther](https://capturetheether.com/challenges/lotteries/guess-the-random-number/)
-
-## Level 4: Reversing and CTFs
-
-TODO - Add a couple of more diffiult CTF challenges
 
 ### Getting Testnet ETH
 
