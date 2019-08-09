@@ -12,6 +12,13 @@ Here's how to get set up for the workshop. It should be super easy except if you
 
 If you run into insurmountable problems ask the instructors for help. There's also a dedicated [Discord channel](https://discord.gg/kGDd8FP) that we created exclusively for you, the valued workshop participant.
 
+### Getting Testnet ETH
+
+First, you need a web3 capable browser and some testnet ETH. You probably also have both, but if not, get [Metamask](https://metamask.io) and grab some ETH from the Ropsten faucets:
+
+- https://faucet.metamask.io/
+- https://faucet.ropsten.be/
+
 ### Installing Ganache
 
 [Ganache](https://www.trufflesuite.com/ganache) is a local Ethereum development server. Install it with npm:
@@ -29,6 +36,7 @@ $ pip3 install mythril
 ```
 
 If you can't get this to work you can use the Docker image instead (see [docs](https://mythril-classic.readthedocs.io/en/master/installation.html), note however that the below tools won't work then.
+_Mythril uses solc to compile Solidity files, so you'll need to [install that as well](https://solidity.readthedocs.io/en/latest/installing-solidity.html#binary-packages)_.
 
 ### Installing Scrooge McEtherface (Exploit Automation)
 
@@ -83,21 +91,15 @@ $ ./scrooge <address>
 - [Ethernaut Fallout](./code/Fallout.sol) - [Challenge](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
 - [Ethernaut Fallback](./code/Fallback.sol) - [Challenge](https://ethernaut.openzeppelin.com/level/0x234094aac85628444a82dae0396c680974260be7)
 
-
 ### Level 2: Integer Arithmetics
 
 In the second example we'll again steal tokens and Ether, but this time with an integer arithmetics flavor.
 
-- [Ethernaut Token](./code/Token.sol) - [~Challenge-
+- [Ethernaut Token](./code/Token.sol) - [Challenge]
 (https://ethernaut.openzeppelin.com/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
 - [Tokensale on CaptureTheEther](./code/TokenSale.sol)(https://capturetheether.com/challenges/math/token-sale/)
 
-### Level 3: Poor Random Numbers
-
-Another simple challenge that has to do with reading storage:
-
-
-### Level 4: Frontrunning
+### Level 3: Honeypot
 
 This time, we'll set up a honeypot for others to tap into.
 
@@ -125,12 +127,7 @@ Theo version v0.8.1.
 >>> 
 ```
 
-### Getting Testnet ETH
-
-First, you need a web3 capable browser and some testnet ETH. You probably also have both, but if not, get [Metamask](https://metamask.io) and grab some ETH from the Ropsten faucets:
-
-- https://faucet.metamask.io/
-- https://faucet.ropsten.be/
+## Advanced Setup
 
 ### Running a Geth Light Client
 
@@ -141,30 +138,6 @@ geth --testnet --syncmode light --rpc
 ```
 
 This should sync with the Ropsten network pretty quickly. You can now point Metamask and Scrooge to `Localhost 8545`.
-
-### Installing Mythril
-
-_Mythril uses solc to compile Solidity files, so you'll need to [install that as well](https://solidity.readthedocs.io/en/latest/installing-solidity.html#binary-packages)_.
-
-[Mythril](https://github.com/ConsenSys/mythril-classic) is a command-line tool for advanced users. It can do a *lot* of stuff, such as analyzing contracts on the blockchain, creating control flow graphs, searching the Ethereum state trie and auto-generating transaction sequences to trigger bugs (plus you can use it to cheat in CTFs).
-
-You can install the latest version from Pypi or Dockerhub (instructions in the [Mythril Wiki](https://github.com/ConsenSys/mythril-classic/wiki/Installation-and-Setup).
-
-**Installing from Pypi**
-
-```
-$ pip3 install mythril
-$ myth version
-Mythril version v0.21.12
-```
-
-**Installing from DockerHub**
-
-```
-$ docker pull mythril/myth
-$ docker run mythril/myth version
-Mythril version v0.21.12
-```
 
 ## Troubleshooting
 
