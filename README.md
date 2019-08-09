@@ -79,24 +79,25 @@ $ ./scrooge <address>
 
 **Target Contracts:**
 
-- [SimpleWalletLibrary](https://github.com/ConsenSys/mythx-playground/blob/master/level1/SimpleWalletLibrary.sol)
+- [Guess the Random Number on CaptureTheEther](./code/guesstherandomnumber.sol) - [Challenge](https://capturetheether.com/challenges/lotteries/guess-the-random-number/)
 - [Ethernaut Fallout](./code/Fallout.sol) - [Challenge](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
 - [Ethernaut Fallback](./code/Fallback.sol) - [Challenge](https://ethernaut.openzeppelin.com/level/0x234094aac85628444a82dae0396c680974260be7)
+
 
 ### Level 2: Integer Arithmetics
 
 In the second example we'll again steal tokens and Ether, but this time with an integer arithmetics flavor.
 
-- [Ethernaut Token](https://ethernaut.openzeppelin.com/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
-- [Tokensale on CaptureTheEther](https://capturetheether.com/challenges/math/token-sale/)
+- [Ethernaut Token](./code/Token.sol) - [~Challenge-
+(https://ethernaut.openzeppelin.com/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
+- [Tokensale on CaptureTheEther](./code/TokenSale.sol)(https://capturetheether.com/challenges/math/token-sale/)
 
 ### Level 3: Poor Random Numbers
 
 Another simple challenge that has to do with reading storage:
 
-- [Guess the Random Number on CaptureTheEther](https://capturetheether.com/challenges/lotteries/guess-the-random-number/)
 
-## Level 4: Frontrunning
+### Level 4: Frontrunning
 
 This time, we'll set up a honeypot for others to tap into.
 
