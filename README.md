@@ -2,9 +2,9 @@
 	<img src="/static/smashing.png" height="300px"/>
 </p>
 
-# Smashing Smart Contracts: Advanced Vulnerability Detection and Exploitation
+# Smashing Smart Contracts: Automated Vulnerability Detection and Exploitation
 
-In this workshop we'll practice hacking & exploitation of Solidity/EVM smart contracts. During the workshop we'll look at  real-world contracts, play challenges from [CaptureTheEther](https://capturetheether.com) and [OpenZeppelin Ethernaut](https://ethernaut.openzeppelin.com) and do a little frontrunning exercise. You'll find the source code for most challenges in [here](https://github.com/ConsenSys/mythx-playground).
+In this workshop we'll practice hacking & exploitation of Solidity/EVM smart contracts. During the workshop we'll look at  real-world contracts, play challenges from [CaptureTheEther](https://capturetheether.com) and [OpenZeppelin Ethernaut](https://ethernaut.openzeppelin.com) and do a little frontrunning exercise. YYou'll find the flattened source code for the challenges in the [code directory](./code).
 
 ## Preparation
 
