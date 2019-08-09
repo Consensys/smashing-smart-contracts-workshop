@@ -4,7 +4,7 @@
 
 # Smashing Smart Contracts: Automated Vulnerability Detection and Exploitation
 
-In this workshop we'll practice hacking & exploitation of Solidity/EVM smart contracts. During the workshop we'll look at  real-world contracts, play challenges from [CaptureTheEther](https://capturetheether.com) and [OpenZeppelin Ethernaut](https://ethernaut.openzeppelin.com) and do a little frontrunning exercise. YYou'll find the flattened source code for the challenges in the [code directory](./code).
+In this workshop we'll practice hacking & exploitation of Solidity/EVM smart contracts. During the workshop we'll look at  real-world contracts, play challenges from [CaptureTheEther](https://capturetheether.com) and [OpenZeppelin Ethernaut](https://ethernaut.openzeppelin.com) and do a little frontrunning exercise. The flattened source code for all challenges is available in the [code directory](./code).
 
 ## Preparation
 
