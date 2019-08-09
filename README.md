@@ -12,13 +12,6 @@ Here's how to get set up for the workshop. It should be super easy except if you
 
 If you run into insurmountable problems ask the instructors for help. There's also a dedicated [Discord channel](https://discord.gg/AQZu4jN) that we created exclusively for you, the valued workshop participant.
 
-### Getting Testnet ETH
-
-First, you need a web3 capable browser and some testnet ETH. You probably also have both, but if not, get [Metamask](https://metamask.io) and grab some ETH from the Ropsten faucets:
-
-- https://faucet.metamask.io/
-- https://faucet.ropsten.be/
-
 ### Installing Ganache
 
 [Ganache](https://www.trufflesuite.com/ganache) is a local Ethereum development server. Install it with npm:
@@ -171,6 +164,14 @@ geth --testnet --syncmode light --rpc
 ```
 
 This should sync with the Ropsten network pretty quickly. You can now point Metamask and Scrooge to `Localhost 8545`.
+
+
+### Getting Testnet ETH
+
+First, you need a web3 capable browser and some testnet ETH. You probably also have both, but if not, get [Metamask](https://metamask.io) and grab some ETH from the Ropsten faucets:
+
+- https://faucet.metamask.io/
+- https://faucet.ropsten.be/
 
 ## Troubleshooting
 
