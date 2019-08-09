@@ -6,6 +6,8 @@
 
 In this workshop we'll practice hacking & exploitation of Solidity/EVM smart contracts. During the workshop we'll look at  real-world contracts, play challenges from [CaptureTheEther](https://capturetheether.com) and [OpenZeppelin Ethernaut](https://ethernaut.openzeppelin.com) and do a little frontrunning exercise. The flattened source code for all challenges is available in the [code directory](./code).
 
+Check out the [DEF CON 27 writeup](https://github.com/b-mueller/smashing-smart-contracts/blob/master/DEFCON27-EVM-Smart-Contracts-Mueller-Luca.pdf) for some background.
+
 ## Preparation
 
 Here's how to get set up for the workshop. It should be super easy except if you're using Windows (you need Node.js and a Python 3 environment).
