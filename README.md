@@ -95,8 +95,7 @@ $ ./scrooge <address>
 
 In the second example we'll again steal tokens and Ether, but this time with an integer arithmetics flavor.
 
-- [Ethernaut Token](./code/Token.sol) - [Challenge]
-(https://ethernaut.openzeppelin.com/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
+- [Ethernaut Token](./code/Token.sol) - [Challenge](https://ethernaut.openzeppelin.com/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
 - [Tokensale on CaptureTheEther](./code/TokenSale.sol) - [Challenge](https://capturetheether.com/challenges/math/token-sale/)
 
 ### Level 3: Honeypot
