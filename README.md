@@ -31,7 +31,8 @@ $ pip3 install mythril
 ```
 
 If you can't get this to work you can use the Docker image instead (see [docs](https://mythril-classic.readthedocs.io/en/master/installation.html), note however that the below tools won't work then.
-_Mythril uses solc to compile Solidity files, so you'll need to [install that as well](https://solidity.readthedocs.io/en/latest/installing-solidity.html#binary-packages)_.
+
+Mythril uses solc to compile Solidity files, so you'll need to [install that as well](https://solidity.readthedocs.io/en/latest/installing-solidity.html#binary-packages).
 
 ### Installing Scrooge McEtherface (Exploit Automation)
 
