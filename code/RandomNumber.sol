@@ -6,7 +6,7 @@
 pragma solidity ^0.4.21;
 
 contract GuessTheRandomNumberChallenge {
-    uint8 answer;
+    uint8 private answer;
 
     function GuessTheRandomNumberChallenge() public payable {
         require(msg.value == 1 ether);
