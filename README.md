@@ -30,6 +30,13 @@ Install [Mythril](https://github.com/ConsenSys/mythril) from Pypi:
 $ pip3 install mythril
 ```
 
+Make sure you have Mythril v0.21.15 or higher installed.
+
+```bash
+$ myth version
+Mythril version v0.21.15
+```
+
 If you can't get this to work you can use the Docker image instead (see [docs](https://mythril-classic.readthedocs.io/en/master/installation.html), note however that the below tools won't work then.
 
 Mythril uses solc to compile Solidity files, so you'll need to [install that as well](https://solidity.readthedocs.io/en/latest/installing-solidity.html#binary-packages).
