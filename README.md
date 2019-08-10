@@ -4,7 +4,7 @@
 
 # Smashing Smart Contracts: Automated Vulnerability Detection and Exploitation
 
-In this workshop we'll practice hacking & exploitation of Solidity/EVM smart contracts. During the workshop we'll look at  real-world contracts, play challenges from [CaptureTheEther](https://capturetheether.com) and [OpenZeppelin Ethernaut](https://ethernaut.openzeppelin.com) and do a little frontrunning exercise. The flattened source code for all challenges is available in the [code directory](./code).
+In this workshop we'll practice hacking & exploitation of Solidity/EVM smart contracts. During the workshop we'll solve challenges from [CaptureTheEther](https://capturetheether.com) and [OpenZeppelin Ethernaut](https://ethernaut.openzeppelin.com) usign [Mythril](https://github.com/ConsenSys/mythril) and [Scrooge McEtherface](https://github.com/b-mueller/scrooge-mcetherface/) and do a little frontrunning exercise. The flattened source code for all challenges is available in the [code directory](./code).
 
 Check out the [DEF CON 27 writeup](https://github.com/b-mueller/smashing-smart-contracts/blob/master/DEFCON27-EVM-Smart-Contracts-Mueller-Luca.pdf) for some background.
 
@@ -35,7 +35,7 @@ _Mythril uses solc to compile Solidity files, so you'll need to [install that as
 
 ### Installing Scrooge McEtherface (Exploit Automation)
 
-To install Scrooge,.clone the Github repo to install the required packages into a Python 3 environment:
+To install Scrooge, clone the [Github repo](https://github.com/b-mueller/scrooge-mcetherface/) to install the required packages into a Python 3 environment:
 
 ```
 $ git clone https://github.com/b-mueller/scrooge-mcetherface
