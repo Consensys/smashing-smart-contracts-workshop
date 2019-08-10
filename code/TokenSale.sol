@@ -7,7 +7,7 @@ pragma solidity ^0.5.0;
 
 contract TokenSale {
     mapping(address => uint256) public balanceOf;
-    uint256 constant PRICE_PER_TOKEN = 1337 ether;
+    uint256 constant PRICE_PER_TOKEN = 1 ether;
 
     constructor() public payable {
         require(msg.value == 1 ether);
