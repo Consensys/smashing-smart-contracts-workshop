@@ -95,7 +95,7 @@ $ ./scrooge <address>
 **Target Contracts:**
 
 - [Guess the Random Number](./code/RandomNumber.sol) - [Challenge on CTE](https://capturetheether.com/challenges/lotteries/guess-the-random-number/)
-- [Ethernaut Fallout](./code/Fallout.sol) - [Challenge on Ethernautt](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
+- [Ethernaut Fallout](./code/Fallout.sol) - [Challenge on Ethernaut](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
 - [Ethernaut Fallback](./code/Fallback.sol) - [Challenge on Ethernaut](https://ethernaut.openzeppelin.com/level/0x234094aac85628444a82dae0396c680974260be7)
 
 ### Level 2: Integer Arithmetics
