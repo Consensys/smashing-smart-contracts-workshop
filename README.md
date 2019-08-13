@@ -78,9 +78,9 @@ $ pip install -e .
 
 ## Workshop Content and Exercises
 
-### Level 1: Accidentally Killin'
+### Level 1: Capturing the Ether
 
-In the first example we'll focus on killing smart contracts as well as stealing Ether from them. Here are a few hints:
+In the first example we'll focus on killing smart contracts as well as draining Ether from them. Here are a few hints:
 
 ```
 $ myth analyze <codefile.sol>
@@ -101,20 +101,20 @@ $ ./scrooge <address>
 
 **Target Contracts:**
 
-- [Guess the Random Number](./code/RandomNumber.sol) - [Challenge on CTE](https://capturetheether.com/challenges/lotteries/guess-the-random-number/)
-- [Ethernaut Fallout](./code/Fallout.sol) - [Challenge on Ethernaut](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
-- [Ethernaut Fallback](./code/Fallback.sol) - [Challenge on Ethernaut](https://ethernaut.openzeppelin.com/level/0x234094aac85628444a82dae0396c680974260be7)
+- [Guess the Random Number](https://github.com/ConsenSys/mythx-playground/blob/master/01_weak_random/RandomNumber.sol) - [Challenge on CTE](https://capturetheether.com/challenges/lotteries/guess-the-random-number/)
+- [Ethernaut Fallout](https://github.com/ConsenSys/mythx-playground/blob/master/02_capturing_ether/ethernaut-fallout.sol) - [Challenge on Ethernaut](https://ethernaut.openzeppelin.com/level/0x220beee334f1c1f8078352d88bcc4e6165b792f6)
+- [Ethernaut Fallback](https://github.com/ConsenSys/mythx-playground/blob/master/02_capturing_ether/ethernaut-fallback.sol) - [Challenge on Ethernaut](https://ethernaut.openzeppelin.com/level/0x234094aac85628444a82dae0396c680974260be7)
 
 ### Level 2: Integer Arithmetics
 
 In the second example we'll again steal tokens and Ether, but this time with an integer arithmetics flavor.
 
-- [Ethernaut Token](./code/Token.sol) - [Challenge on Ethernaut](https://ethernaut.openzeppelin.com/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
-- [Tokensale on CaptureTheEther](./code/TokenSale.sol) - [Challenge on CTE](https://capturetheether.com/challenges/math/token-sale/)
+- [Ethernaut Token](https://github.com/ConsenSys/mythx-playground/blob/master/03_integer_arithmetics/ethernaut-token.sol) - [Challenge on Ethernaut](https://ethernaut.openzeppelin.com/level/0x6545df87f57d21cb096a0bfcc53a70464d062512)
+- [Tokensale on CaptureTheEther](https://github.com/ConsenSys/mythx-playground/blob/master/03_integer_arithmetics/cte-tokensale.sol) - [Challenge on CTE](https://capturetheether.com/challenges/math/token-sale/)
 
 ### Level 3: Honeypot
 
-This time, we'll set up a honeypot for others to tap into ([VulnerableTwoStep](./code/VulnerableTwoStep.sol)).
+This time, we'll set up a honeypot for others to tap into ([VulnerableTwoStep](https://github.com/ConsenSys/mythx-playground/blob/master/06_frontrunning_honeypot/VulnerableTwoStep.sol)).
 
 To run Theo, start it with available arguments:
 ```console
@@ -167,9 +167,9 @@ contract Wrapper {
 
 *Mainnet addresses will be announced at the workshop*.
 
-- 1. Long Range Replay
-- 2. YouToken
-- 3. Rev Eng
+- 1. Long Range Replay - [ABI](https://github.com/ConsenSys/mythx-playground/blob/master/07_CTF/LongRageReplay.abi)
+- 2. YouToken - [ABI](https://github.com/ConsenSys/mythx-playground/blob/master/07_CTF/YouToken.abi)
+- 3. Rev Eng -[ABI](https://github.com/ConsenSys/mythx-playground/blob/master/07_CTF/RevEng.abi)
 
 ## Advanced Setup
 
